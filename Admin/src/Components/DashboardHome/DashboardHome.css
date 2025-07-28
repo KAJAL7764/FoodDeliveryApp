@@ -1,0 +1,13 @@
+.dashboard-page {
+  padding: 20px;
+  background: #f4f6f8;
+  min-height: 100vh;
+  width: 80%;
+}
+
+.dashboard-middle {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}

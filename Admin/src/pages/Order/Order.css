@@ -1,0 +1,148 @@
+Order.css
+
+.order {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+  }
+  
+  .order h3 {
+    text-align: left;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.2rem;
+    border: 1px solid #d9a89f;
+    border-radius: 5px;
+    background-color: #fff;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .order-item svg {
+    flex-shrink: 0;
+    margin-top: 5px;
+    color: orange;
+  }
+  
+  .order-item > div {
+    flex: 1;
+    min-width: 220px;
+  }
+  
+  .order-item-food {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #222;
+  }
+  
+  .order-item-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .order-item-address {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 4px 0;
+    line-height: 1.4;
+  }
+  
+  .order-item-phone {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+    margin-top: 4px;
+  }
+  
+  /* Amount, Item count, Dropdown styling */
+  .order-item p:nth-child(3),
+  .order-item select {
+    margin-left: auto;
+    text-align: right;
+  }
+  
+  .order-item select {
+    padding: 6px 10px;
+    font-size: 0.95rem;
+    border-radius: 5px;
+    border: 1px solid #d6a79c;
+    background-color: #fce8e2;
+    color: #333;
+    cursor: pointer;
+    min-width: 120px;
+  }
+  
+  .order-item select:focus {
+    outline: none;
+    border-color: #ffb4a2;
+  }
+  
+  .order-item > p {
+    font-weight: 500;
+    min-width: 100px;
+    text-align: right;
+  }
+  
+  .pagination {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .pagination button {
+    padding: 6px 12px;
+    background-color: #fff;
+    border: 1px solid #e8c3c3;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: #ffecec;
+  }
+  
+  .pagination button.active-page {
+    background-color: #f76b6b;
+    color: white;
+    border: none;
+  }
+  
+
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .order-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .order-item > p,
+    .order-item select {
+      text-align: left;
+      margin-left: 0;
+      margin-top: 0.5rem;
+    }
+  
+    .order-item > div {
+      min-width: 100%;
+    }
+  }
+  
