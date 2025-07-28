@@ -22,5 +22,4 @@ dist/
 .DS_Store
 Thumbs.db
 
-# uploads folder (optional)
-Backend/uploads/
+
