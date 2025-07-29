@@ -14,7 +14,8 @@ import { ToastContainer } from 'react-toastify';
 
 function App() {
  
-  const url = 'http://localhost:8080';
+  // const url = 'http://localhost:8080';
+  const url = 'https://fooddeliveryapp-1-vy4f.onrender.com';
   return (
     <>
       <Navbar/>
